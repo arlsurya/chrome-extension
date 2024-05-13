@@ -1,0 +1,8 @@
+{
+    "name": "HA Bulk Message",
+    "version": "0.0.1",
+    "mainifest_version": 2,
+    "permissions": [
+        "activeTabs"
+    ]
+}
