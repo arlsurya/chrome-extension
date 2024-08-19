@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Chrome Extension</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body style="width: 550px" data-chardin-sequenced="true" data-chardin-auto="false" data-chardin-delay="800">
+    <div class="inline-flex" style="width: 100%; flex-wrap: wrap; justify-content: center">
+        <input id="number" style="width: 90%; height: 30px" type="text" class="rounded-lg border-2 px-2"
+            placeholder="  Add Numbers with country code Eg 91933333333 seprated by commas + Enter" name="numbers" />
+        <button class="send" id="send">send</button>
+        <!-- <button class="clear" id="clear">clear</button> -->
+        <span class="flex mb-1 font-bold contact-found" id="contacts-found"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

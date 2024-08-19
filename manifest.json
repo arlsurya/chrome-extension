@@ -1,8 +1,23 @@
 {
     "name": "HA Bulk Message",
     "version": "0.0.1",
-    "mainifest_version": 2,
+    "manifest_version": 2,
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "logo.png"
+    },
+    "icons": {
+        "128": "logo.png"
+    },
     "permissions": [
-        "activeTabs"
+        "activeTab",
+        "tabs",
+        "https://web.whatsapp.com/*"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://web.whatsapp.com/*"],
+            "js": ["content.js"]
+        }
     ]
 }
